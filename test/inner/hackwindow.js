@@ -1,19 +1,19 @@
 export function setNavigatorProp(name, value) {
-    if (window.navigator[name] !== value) {
-        const prop = {
-            get: () => value,
-        };
+  if (window.navigator[name] !== value) {
+    const prop = {
+      get: () => value
+    };
 
-        try {
-            Object.defineProperty(window.navigator, name, prop);
-        } catch (e) {
-            const newObj = {};
+    try {
+      Object.defineProperty(window.navigator, name, prop);
+    } catch (e) {
+      const newObj = {};
 
-            newObj[name] = prop;
+      newObj[name] = prop;
 
-            window.navigator = Object.create(navigator, newObj);
-        }
+      window.navigator = Object.create(navigator, newObj);
     }
+  }
 }
 
 /**
@@ -22,9 +22,9 @@ export function setNavigatorProp(name, value) {
  * navigator.userAgent是只读，需要hack才能临时修改
  */
 export function setUserAgent(userAgent) {
-    setNavigatorProp('userAgent', userAgent);
+  setNavigatorProp('userAgent', userAgent);
 }
 
 export function setAppVersion(appVersion) {
-    setNavigatorProp('appVersion', appVersion);
+  setNavigatorProp('appVersion', appVersion);
 }

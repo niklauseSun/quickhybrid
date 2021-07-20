@@ -1,14 +1,14 @@
 const base = require('./karma.base.config.js');
 
 module.exports = function devConfig(config) {
-    config.set(Object.assign(base, {
+  config.set(
+    Object.assign(base, {
+      reporters: ['progress'],
 
-        reporters: ['progress'],
-        
-        // Chrome
-        browsers: ['PhantomJS'],
+      // Chrome
+      browsers: ['PhantomJS'],
 
-        singleRun: false,
-
-    }));
+      singleRun: false
+    })
+  );
 };

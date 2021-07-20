@@ -4,17 +4,17 @@
  * @return {String} 补齐0后的字符串
  */
 export default function paddingWith0(numberStr) {
-    const DECIMAL_TEN = 10;
-    let number = numberStr;
+  const DECIMAL_TEN = 10;
+  let number = numberStr;
 
-    if (typeof number === 'number' || typeof number === 'string') {
-        number = parseInt(number, DECIMAL_TEN);
-        if (number < DECIMAL_TEN) {
-            number = `0${number}`;
-        }
-
-        return number;
+  if (typeof number === 'number' || typeof number === 'string') {
+    number = parseInt(number, DECIMAL_TEN);
+    if (number < DECIMAL_TEN) {
+      number = `0${number}`;
     }
-    
-    return '';
+
+    return number;
+  }
+
+  return '';
 }

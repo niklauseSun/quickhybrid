@@ -63,3 +63,6 @@ segmentfault地址：
 - 也可以直接在`github issue`中讨论
 
 _注意，申请加入群时请添加验证信息，例如：quickhybrid运行遇到问题等等_
+
+
+node 版本 用10

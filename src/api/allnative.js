@@ -5,6 +5,7 @@ import deviceMixin from './native/device';
 import pageMixin from './native/page';
 import navigatorMixin from './native/navigator';
 import utilMixin from './native/util';
+import takeToSeeMixin from './native/taketosee';
 
 const hybridJs = window.quick;
 
@@ -15,3 +16,4 @@ deviceMixin(hybridJs);
 pageMixin(hybridJs);
 navigatorMixin(hybridJs);
 utilMixin(hybridJs);
+takeToSeeMixin(hybridJs);
