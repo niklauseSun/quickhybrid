@@ -58,6 +58,58 @@ export default function utilMixin(hybrid) {
         );
         hybridJs.callInner.apply(this, args);
       }
+    },
+    {
+      namespace: 'openFolder',
+      os: ['quick'],
+      runCode(...rest) {
+        // 兼容字符串形式
+        const args = innerUtil.compatibleStringParamsToObject.call(
+          this,
+          rest,
+          'path'
+        );
+        hybridJs.callInner.apply(this, args);
+      }
+    },
+    {
+      namespace: 'copyFileToLocation',
+      os: ['quick'],
+      runCode(...rest) {
+        // 兼容字符串形式
+        const args = innerUtil.compatibleStringParamsToObject.call(
+          this,
+          rest,
+          'path'
+        );
+        hybridJs.callInner.apply(this, args);
+      }
+    },
+    {
+      namespace: 'createFolder',
+      os: ['quick'],
+      runCode(...rest) {
+        // 兼容字符串形式
+        const args = innerUtil.compatibleStringParamsToObject.call(
+          this,
+          rest,
+          'path'
+        );
+        hybridJs.callInner.apply(this, args);
+      }
+    },
+    {
+      namespace: 'pathToBaseImg',
+      os: ['quick'],
+      runCode(...rest) {
+        // 兼容字符串形式
+        const args = innerUtil.compatibleStringParamsToObject.call(
+          this,
+          rest,
+          'path'
+        );
+        hybridJs.callInner.apply(this, args);
+      }
     }
   ]);
 }

@@ -721,6 +721,54 @@ function utilMixin(hybrid) {
       var args = innerUtil.compatibleStringParamsToObject.call(this, rest, 'path');
       hybridJs.callInner.apply(this, args);
     }
+  }, {
+    namespace: 'openFolder',
+    os: ['quick'],
+    runCode: function runCode() {
+      for (var _len2 = arguments.length, rest = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+        rest[_key2] = arguments[_key2];
+      }
+
+      // 兼容字符串形式
+      var args = innerUtil.compatibleStringParamsToObject.call(this, rest, 'path');
+      hybridJs.callInner.apply(this, args);
+    }
+  }, {
+    namespace: 'copyFileToLocation',
+    os: ['quick'],
+    runCode: function runCode() {
+      for (var _len3 = arguments.length, rest = Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {
+        rest[_key3] = arguments[_key3];
+      }
+
+      // 兼容字符串形式
+      var args = innerUtil.compatibleStringParamsToObject.call(this, rest, 'path');
+      hybridJs.callInner.apply(this, args);
+    }
+  }, {
+    namespace: 'createFolder',
+    os: ['quick'],
+    runCode: function runCode() {
+      for (var _len4 = arguments.length, rest = Array(_len4), _key4 = 0; _key4 < _len4; _key4++) {
+        rest[_key4] = arguments[_key4];
+      }
+
+      // 兼容字符串形式
+      var args = innerUtil.compatibleStringParamsToObject.call(this, rest, 'path');
+      hybridJs.callInner.apply(this, args);
+    }
+  }, {
+    namespace: 'pathToBaseImg',
+    os: ['quick'],
+    runCode: function runCode() {
+      for (var _len5 = arguments.length, rest = Array(_len5), _key5 = 0; _key5 < _len5; _key5++) {
+        rest[_key5] = arguments[_key5];
+      }
+
+      // 兼容字符串形式
+      var args = innerUtil.compatibleStringParamsToObject.call(this, rest, 'path');
+      hybridJs.callInner.apply(this, args);
+    }
   }]);
 }
 
